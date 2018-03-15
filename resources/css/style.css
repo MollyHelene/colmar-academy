@@ -17,6 +17,8 @@ span {
   font-family: "Lato";
   font-weight: 300;
   font-size: 1.25rem;
+  letter-spacing: .02em;
+  line-height: 1.15em;
 }
 
 p {
@@ -132,8 +134,6 @@ font-family: "Lato"
 /* MAIN BANNER SECTION */
 
 .banner1 {
-  width: 100%;
-  display: flex;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -210,9 +210,9 @@ h1 {
 }
 
 
-/* SUPPORTING BANNER & INFO SECTION */
+/* INFORMATION SECTION */
 
-.banner2 {
+.information {
   width: 100%;
   display: flex;
   display: flex;
@@ -230,7 +230,7 @@ h1 {
   flex-direction: column;
 }
 
-.banner2-image {
+.information-image {
   width: 100%;
 }
 
@@ -254,6 +254,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-color: #fffacd;
 }
 
 .info {
@@ -261,7 +262,6 @@ h1 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
   padding: 1.25rem;
 }
 
@@ -305,6 +305,15 @@ h1 {
   color: #6495ed;
 }
 
+.orientation {
+  border-bottom: 2rem solid #fffff0;
+
+}
+
+.campus {
+  border-bottom: 2rem solid #fffff0;
+}
+
 .guest-lecturer {
   background-color: #808080;
   color: #fffacd;
@@ -314,11 +323,65 @@ h1 {
   color: #e0ffff;
 }
 
-/* START LEARNING SECTION */
+/* COURSES SECTION */
 
+.learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+}
 
+.title-learning {
+  padding: 2rem 0;
+}
 
-/* THESIS EXHIBIT SECTION */
+.title-learning h2 {
+  color: #fffacd;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 22rem 22rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  padding: 0 4.5rem;
+}
+
+.course-container {
+  background-color: #fffff0;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+}
+
+.course-image img {
+  width: 100%;
+}
+
+.course-type h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.courses {
+  padding: .5rem 1rem;
+}
+
+.courses-list {
+  padding: 0 1rem;
+}
+
+.courses-list span {
+  font-size: 1rem;
+}
+
+/* THESIS SECTION */
 
 
 
