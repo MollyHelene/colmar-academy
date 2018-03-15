@@ -5,6 +5,26 @@ html {
   background-size: cover;
 }
 
+/* UNIVERSAL */
+
+h2 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+span {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 /* HEADER SECTION */
 
 header {
@@ -17,7 +37,7 @@ header {
  }
 
 /* Logo */
- .logo{
+ .logo {
    display: flex;
    align-items: center;
    height: 4rem;
@@ -27,9 +47,9 @@ header {
   height: 4rem;
 }
 
-.logo h2 {
+.logo h4 {
+font-family: "Lato"
   font-size: 1.5rem;
-  font-family: "Lato"
 }
 
 .colmar {
@@ -40,6 +60,7 @@ header {
 .academy {
   color: #6495ed;
   margin-left: -.2em;
+  font-weight: 400;
 }
 
 /* Nav */
@@ -53,7 +74,7 @@ header {
 .nav a {
   font-family: "Lato";
   font-weight: 400;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: black;
 }
 
@@ -151,7 +172,7 @@ h1 {
   font-size: 3.5rem;
   font-weight: 900;
   color: #fffacd;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1.5px 1.5px 2px black;
   padding-left: 3rem;
 }
 
@@ -174,7 +195,7 @@ h1 {
   background-color: #fffacd;
   text-align: center;
   padding: 1rem 4rem;
-  box-shadow: 2px 2px 2px 1px black;
+  box-shadow: 2px 2px 1.5px 1px black;
   border-radius: 2%;
 }
 
@@ -182,7 +203,7 @@ h1 {
   margin: 0 auto;
 }
 
-span {
+.start-here span {
   font-family: "Roboto";
   font-size: 1.75rem;
   text-align: center;
@@ -198,13 +219,28 @@ span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #b0c4de;
+  background-color: #fffff0;
 }
 
 /* left info banner */
 
+.left2 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
 .banner2-image {
   width: 100%;
+}
+
+.left-text {
+  padding: 2rem 1.5rem;
+}
+
+.left-subtext {
+  margin: 1.5rem 0 3rem 0;
+  font-style: italic;
 }
 
 /* right info banner */
@@ -218,6 +254,64 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.info-image {
+  width: 35%;
+  height: auto;
+}
+
+.info-image img {
+  width: 100%;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 65%;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+}
+
+.info-text h3{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.what {
+  font-family: "Lato";
+  font-size: 1.5rem;
+}
+
+.subwhat {
+  padding: 1rem 0;
+}
+
+.info-text a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6495ed;
+}
+
+.guest-lecturer {
+  background-color: #808080;
+  color: #fffacd;
+}
+
+.guest-lecturer a {
+  color: #e0ffff;
 }
 
 /* START LEARNING SECTION */
