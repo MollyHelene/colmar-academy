@@ -211,12 +211,11 @@ h1 {
 }
 
 /* Main Banner Media Query */
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1024px) {
   .banner {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
       padding-bottom: 2rem;
     }
@@ -284,11 +283,11 @@ h1 {
 .information {
   width: 100%;
   display: flex;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #fffff0;
+  padding-bottom: 2rem;
 }
 
 /* Left Info Banner */
@@ -315,6 +314,7 @@ h1 {
 .right-info {
   width: 40%;
   display: flex;
+  padding-top: 2rem;
 }
 
 .info-container {
@@ -328,9 +328,10 @@ h1 {
 .info {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
+  width: 100%;
 }
 
 .info-image {
@@ -342,6 +343,10 @@ h1 {
   width: 100%;
 }
 
+.info-image .mobile {
+  display: none;
+}
+
 .info-text {
   display: flex;
   flex-direction: column;
@@ -350,6 +355,10 @@ h1 {
   width: 65%;
   padding-left: 1.5rem;
   padding-right: 1rem;
+}
+
+.info-text a:hover {
+  font-weight: bold;
 }
 
 .info-text h3{
@@ -391,7 +400,7 @@ h1 {
 }
 
 /* Information Media Query */
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 640px) {
   .information {
       display: flex;
       flex-wrap: wrap;
@@ -414,36 +423,13 @@ h1 {
       height: auto;
     }
 
-    .left-text {
-      width: auto;
+    .info-image .desktop{
+      display: none;
     }
 
-    .left-subtext h3{
-      width: auto;
-    }
-}
-
-@media screen and (max-width: 640px) {
-  .banner {
+    .info-image .mobile {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      padding-bottom: 2rem;
-    }
-
-    .left-info {
-      width: auto;
-    }
-
-    .rightinfo {
-      width: auto;
-    }
-
-    .banner-image {
       width: 100%;
-      height: auto;
     }
 
     .left-text {
@@ -455,7 +441,7 @@ h1 {
     }
 
     .left-subtext {
-      margin: 1.5rem 0 !important;
+      margin: 1.5rem 0;
     }
 
     .left-subtext span{
@@ -466,16 +452,11 @@ h1 {
     p {
       font-size: .75rem;
     }
-
-    .guest-lecturer {
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-    }
 }
 
 /* COURSES GRID SECTION */
 
-.learning {
+.learning-desktop {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,7 +464,16 @@ h1 {
     background-color: #808080;
 }
 
+.learning-mobile {
+    display: hide;
+}
+
 .title-learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
   padding: 2rem 0;
   text-shadow: .5px .5px .75px black;
   letter-spacing: .025em;
@@ -496,7 +486,7 @@ h1 {
 .learning-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 22rem 22rem;
+  grid-template-rows: auto auto;
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
   padding: 0 4.5rem 2rem 4.5rem;
@@ -515,6 +505,10 @@ h1 {
   width: 100%;
 }
 
+.learning-mobile {
+  display: none;
+}
+
 .course-type h3 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -530,7 +524,7 @@ h1 {
 }
 
 .courses-list {
-  padding: 0 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .courses-list span {
@@ -539,9 +533,51 @@ h1 {
 
 /* Courses Media Query */
 
-@media screen and (max-width: 940px) {
-  .title-learning h2 {
-    font-size: 2rem;
+@media screen and (max-width: 640px) {
+  .learning-desktop {
+    display: none;
+  }
+
+  .learning-mobile {
+    background-color: #808080;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-learning {
+    padding: 2rem 0 1rem 0;
+    margin: 0;
+  }
+
+  .course-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin: 0rem auto 2rem auto;
+    width: 100%;
+  }
+
+  .course-type-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: #fffacd;
+    box-shadow: 2px 2px 1.5px 1px black;
+    border-radius: 2%;
+
+  }
+
+  .course-type-mobile h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1rem 0 1rem;
   }
 }
 
@@ -560,7 +596,7 @@ h1 {
   letter-spacing: .025em;
 }
 
-.thesis {
+.thesis-desktop {
   width: 100%;
   display: flex;
   display: flex;
@@ -568,6 +604,11 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   background-color: #fffff0;
+}
+
+.thesis-mobile {
+  display: none;
+
 }
 
 /* Left Thesis */
@@ -631,7 +672,6 @@ h1 {
   font-weight: bold;
 }
 
-
 .thesis-text a {
   text-decoration: none;
   font-size: 1rem;
@@ -646,6 +686,21 @@ h1 {
 
 .now-then {
   border-bottom: 1rem solid #fffff0;
+}
+
+@media screen and (max-width: 640px) {
+  .thesis-desktop {
+    display: none;
+  }
+
+  .thesis-mobile {
+    display: flex;
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* FOOTER SECTION */
@@ -668,4 +723,15 @@ h1 {
 .terms {
   padding-right: 1.5rem;
   padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .terms {
+    display: none;
+  }
+
+  .copyright {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
 }

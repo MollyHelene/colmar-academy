@@ -14,7 +14,7 @@
 <header class= "header">
   <div class= "logo">
     <div>
-      <img src="resources/images/ic-logo.svg" />
+      <img src="resources/images/ic-logo.svg" alt="Colmar Academy logo"/>
     </div>
     <h4 class="desktop-screen">
       <span class="colmar">COLMAR</span>
@@ -32,10 +32,10 @@
     </nav>
 
     <nav class="mobile-screen">
-        <a href="#"><img src="resources/images/ic-logo.svg"></a>
-        <a href="#"><img src="resources/images/ic-on-campus.svg"></a>
-        <a href="#"><img src="resources/images/ic-online.svg"></a>
-        <a href="#"><img src="resources/images/ic-login.svg"></a>
+        <a href="#"><img src="resources/images/ic-logo.svg" alt="Colmar Academy logo"></a>
+        <a href="#"><img src="resources/images/ic-on-campus.svg" alt="desk icon"></a>
+        <a href="#"><img src="resources/images/ic-online.svg"alt="computer screen icon"></a>
+        <a href="#"><img src="resources/images/ic-login.svg" alt="human head and shoulders icon"></a>
     </nav>
 
   </div> <!-- End "nav" -->
@@ -49,7 +49,7 @@
   <!-- Left Main-->
     <div class="left">
       <div class="image-container">
-        <img class="banner-image" src="resources/images/banner.jpg" />
+        <img class="banner-image" src="resources/images/banner.jpg" alt="photo looking down at students studying outside on a picnic table"/>
       </div>
     </div>
 
@@ -77,7 +77,7 @@
   <!-- Left Info-->
   <div class="left-info">
     <div class="image-container">
-      <img class="information-image"  src="resources/images/information-main.jpg"/>
+      <img class="information-image"  src="resources/images/information-main.jpg" alt="photo of young man studying"/>
     </div>
     <div class="left-text">
       <h2>It doesn't hurt to keep practicing</h2>
@@ -94,7 +94,8 @@
     <div class="info-container">
       <div class="info orientation">
         <div class="info-image">
-          <img src="resources/images/information-orientation.jpg"/>
+          <img class="desktop" src="resources/images/information-orientation.jpg" alt="photo from above of students walking on a dirt path"/>
+          <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="photo from above of students walking on a dirt path"/>
         </div>
         <div class="info-text">
           <h3 class="what">Orientation date</h3>
@@ -104,7 +105,8 @@
       </div>
       <div class="info campus">
         <div class="info-image">
-          <img src="resources/images/information-campus.jpg"/>
+          <img class="desktop" src="resources/images/information-campus.jpg" alt="students in a study hall or classroom with a map of Central and South America on the wall"/>
+            <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="students in a study hall or classroom with a map of Central and South America on the wall"/>
         </div>
         <div class="info-text">
           <h3 class="what">Our campus</h3>
@@ -114,7 +116,8 @@
       </div>
       <div class="info guest-lecturer">
         <div class="info-image">
-          <img src="resources/images/information-guest-lecture.jpg"/>
+          <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="photo of guest lecturer Oliver Sack"/>
+          <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="photo of guest lecturer Oliver Sack"/>
         </div>
         <div class="info-text">
           <h3 class="what">Our guest lecture</h3>
@@ -128,14 +131,14 @@
 
 <!--COURSES GRID SECTION-->
 
- <div class="learning">
-   <div class="title-learning">
-     <h2>Start Learning</h2>
-   </div>
-   <div class="learning-grid">
+<div class="title-learning">
+  <h2>Start Learning</h2>
+</div>
+ <div class="learning-desktop">
+  <div class="learning-grid">
      <div class="course-container">
        <div class="course-image">
-         <img src="resources/images/course-software.jpg"/>
+         <img src="resources/images/course-software.jpg" alt="photo of 2 desktop computer screens"/>
        </div>
        <div class="course-type">
          <h3>Software engineering</h3>
@@ -149,7 +152,7 @@
      </div>
      <div class="course-container">
        <div class="course-image">
-         <img src="resources/images/course-computer-art.jpg"/>
+         <img src="resources/images/course-computer-art.jpg" alt="photo of someone's hand holding a mobile phone with an interactive screen"/>
        </div>
        <div class="course-type">
          <h3>Computer art</h3>
@@ -163,7 +166,7 @@
      </div>
      <div class="course-container">
        <div class="course-image">
-         <img src="resources/images/course-design.jpg"/>
+         <img src="resources/images/course-design.jpg" alt="photo closeup of someone adjusting a camera."/>
        </div>
        <div class="course-type">
          <h3>Design</h3>
@@ -177,7 +180,7 @@
      </div>
      <div class="course-container">
        <div class="course-image">
-         <img src="resources/images/course-data.jpg"/>
+         <img src="resources/images/course-data.jpg" alt="photo of a laptop computer open to a screen of a chart and data"/>
        </div>
        <div class="course-type">
          <h3>Data</h3>
@@ -191,7 +194,7 @@
      </div>
      <div class="course-container">
        <div class="course-image">
-         <img src="resources/images/course-business.jpg"/>
+         <img src="resources/images/course-business.jpg" alt="photo of chess pieces"/>
        </div>
        <div class="course-type">
          <h3>Business</h3>
@@ -205,7 +208,7 @@
      </div>
      <div class="course-container">
        <div class="course-image">
-         <img src="resources/images/course-marketing.jpg"/>
+         <img src="resources/images/course-marketing.jpg" alt="closeup photo of someonoe interacting with a smart watch"/>
        </div>
        <div class="course-type">
          <h3>Marketing</h3>
@@ -219,19 +222,41 @@
      </div>
    </div>
  </div>
+ <div class="learning-mobile">
+   <div class="course-container-mobile">
+     <div class="course-type-mobile">
+       <h3>Software engineering</h3>
+     </div>
+     <div class="course-type-mobile">
+       <h3>Computer art</h3>
+     </div>
+     <div class="course-type-mobile">
+       <h3>Design</h3>
+     </div>
+     <div class="course-type-mobile">
+       <h3>Data</h3>
+     </div>
+     <div class="course-type-mobile">
+       <h3>Business</h3>
+     </div>
+     <div class="course-type-mobile">
+       <h3>Marketing</h3>
+     </div>
+   </div>
+ </div>
 
 <!--THESIS SECTION-->
 
 <div class="title-thesis">
   <h2>Thesis exhibit</h2>
 </div>
-<div class="thesis">
+<div class="thesis-desktop">
 
   <!-- Left Thesis-->
   <div class="left3">
     <div class="video-container">
       <video width="100%" height="auto" autoplay loop show controls alt="Thesis Video">
-      <source src="resources/videos/thesis.mp4" type="video/mp4">
+      <source src="resources/videos/thesis.mp4" type="video/mp4" alt="Clooped video animation of sped up 24 hours looking at building with windows.">
       </video>
     </div>
 
@@ -249,7 +274,7 @@
     <div class="thesis-container">
       <div class="info fisma">
         <div class="thesis-image">
-          <img src="resources/images/thesis-fisma.jpg"/>
+          <img src="resources/images/thesis-fisma.jpg" alt="overhead photo of someone's arm working on papers with a marker. There is mobile phone on the desk open to its homescreen"/>
         </div>
         <div class="thesis-text">
           <h3 class="what">Fisma: Design and Prototype</h3>
@@ -258,7 +283,7 @@
       </div>
       <div class="info now-then">
         <div class="thesis-image">
-          <img src="resources/images/thesis-now-and-then.jpg"/>
+          <img src="resources/images/thesis-now-and-then.jpg" alt="photo of the Empire State Building and nearby buildings in New York City "/>
         </div>
         <div class="thesis-text">
           <h3 class="what">Now and then</h3>
@@ -266,6 +291,13 @@
         </div>
       </div>
      </div>
+   </div>
+ </div>
+ <div class="thesis-mobile">
+   <div class="video-container">
+     <video width="100%" height="auto" autoplay loop show controls alt="Thesis Video">
+     <source src="resources/videos/thesis.mp4" type="video/mp4" alt="Clooped video animation of sped up 24 hours looking at building with windows.">
+     </video>
    </div>
  </div>
 
