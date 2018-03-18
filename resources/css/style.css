@@ -557,14 +557,14 @@ h1 {
     align-items: center;
     padding-bottom: 2rem;
     margin: 0rem auto 2rem auto;
-    width: 100%;
+    width: 95%;
   }
 
   .course-type-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 80%;
     margin: 1rem;
     padding-bottom: 1.5rem;
